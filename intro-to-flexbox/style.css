@@ -1,4 +1,17 @@
 /* --- General --- */
+:root {
+  --text-color-1: white;
+  --text-color-2: lightblue;
+  --font-family-1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+*, html, body {
+  background-color: rgb(62, 62, 62);
+  display: flex;
+  flex-direction: column;
+  
+}
 
 main {
   padding: 20px 0;
@@ -10,11 +23,18 @@ section {
 
 h1 {
   margin: 0 0 30px 10px;
+  color: var(--text-color-1);
+  font-family: var(--font-family-2);
+  align-items: center;
 }
 
 h2 {
-  margin: 0 10px;
+  margin: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid gray;
+  color: var(--text-color-1);
+  font-family: var(--font-family-2);
+  align-items: center;
 }
 
 h3 {
@@ -25,7 +45,27 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  flex-direction: row;
+  flex: 0.25;
+  color: var(--text-color-1);
+}
+
+.group2 {
+  flex-direction: row;
+  flex: 0.3;
+  color: var(--text-color-2);
 }
 
 .item {
+  font-family: var(--font-family-1);
+  margin: 30px;
+}
+
+.item-alt {
+  color: lightcoral;
+}
+
+.item > p {
+  align-items: center;
+  padding: 10px;
 }
